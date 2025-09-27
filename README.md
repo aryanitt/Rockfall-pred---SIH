@@ -1,37 +1,30 @@
-Car Price Prediction
-This project is a Machine Learning web application that predicts the price of a car based on its features such as dimensions, engine specs, and categorical details like fuel system or car brand. The project uses Scikit-learn, Pandas, and Flask for end-to-end development — from data preprocessing to model deployment.
+# 🪨 Rockfall Prediction Model
 
-Car_Price_Prediction/
-│
-├── artifacts/                 # Stores trained models, transformers
-├── notebook/                  # EDA and visualization notebooks
-├── src/
-│   ├── components/            # Data ingestion, transformation, model trainer
-│   ├── pipeline/              # Prediction pipeline
-│   ├── logger_config.py       # Logging setup
-│   ├── exception_config.py    # Custom exceptions
-│   └── utils.py               # Utility functions
-│
-├── templates/                 # HTML Templates (home.html, index.html)
-├── static/                    # (Optional) Static files like CSS/images
-├── app.py                     # Flask application entry point
-├── requirements.txt
-└── README.md
+## 📌 Overview
+This project is a **machine learning model** that predicts the likelihood of **rockfall events** in a given area based on geological, topographical, and environmental data.  
+The aim is to provide early warnings and help mitigate risks in landslide-prone regions.
 
+---
 
-Features
+## 🚀 Features
+- Predict rockfall risk using features such as slope, soil type, rainfall, and elevation.  
+- Preprocessing pipeline for handling raw geological and environmental data.  
+- Multiple ML models supported (Random Forest, XGBoost, Logistic Regression).  
+- Evaluation metrics including **Accuracy, Precision, Recall, F1-Score, and ROC-AUC**.  
+- Visualizations for high-risk zones to aid decision-making.
 
+---
 
-Automated data ingestion, preprocessing, and 
+## 📂 Project Structure
 
-Uses OneHotEncoder, StandardScaler, and PCA for pipeline processing.
-
-Trained using regression models (e.g.,LinearRegression, RandomForest).
-
-Integrated with Flask to serve model predictions via web UI.
-
-Accepts user input (car specs) and predicts price instantly.
-"# BrainScan-Lite-MBTI-Personality-Predictor" 
-"# BrainScan-Lite-MBTI-Personality-Predictor" 
-"# BrainScan-Lite-MBTI-Personality-Predictor" 
-"# Rockfall-pred---SIH" 
+rockfall-prediction-model/
+│── data/ # Input dataset (raw or processed)
+│── notebooks/ # Jupyter notebooks for EDA, feature analysis, and experiments
+│── src/ # Source code
+│ ├── preprocessing.py
+│ ├── feature_engineering.py
+│ ├── train.py
+│ ├── predict.py
+│── models/ # Saved trained models
+│── requirements.txt # Required Python libraries
+│── README.md # Project documentation
